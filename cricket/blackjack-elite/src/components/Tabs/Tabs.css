@@ -1,0 +1,70 @@
+.tabs-container {
+  padding: 2rem 0 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+  font-family: var(--font-inter);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--blackjack-light-gray);
+  cursor: pointer;
+  transition: all 0.3s var(--ease-custom);
+  position: relative;
+  overflow: hidden;
+}
+
+.tab:hover {
+  border-color: var(--blackjack-light-blue);
+  color: var(--blackjack-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+}
+
+.tab.active {
+  background: linear-gradient(135deg, var(--blackjack-electric), var(--blackjack-teal));
+  border-color: var(--blackjack-light-blue);
+  color: white;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+}
+
+.tab.active:hover {
+  box-shadow: 0 6px 30px rgba(59, 130, 246, 0.6);
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    gap: 0.5rem;
+  }
+  
+  .tab {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .tab {
+    padding: 0.6rem 1.2rem;
+    min-width: auto;
+  }
+}

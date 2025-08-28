@@ -1,0 +1,44 @@
+.main-header {
+  background: linear-gradient(120deg, #062147 60%, #183c57 100%);
+  border-bottom: 2px solid #3bc6ff33;
+  box-shadow: 0 4px 24px #0a142b33;
+  padding: 1.6rem 0;
+  position: relative;
+  z-index: 10;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+.main-logo {
+  height: 72px;
+  width: auto;
+  filter: drop-shadow(0 0 16px #37bfff88) brightness(1.2);
+}
+.site-title {
+  text-align: left;
+}
+.site-title h1 {
+  font-size: 2.7rem;
+  color: #ccecff;
+  letter-spacing: 0.14em;
+  margin: 0 0 0.2rem 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  text-shadow: 0 1px 12px #3bc5ff35;
+}
+.tagline {
+  font-size: 1.15rem;
+  color: #84caff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+@media (max-width: 600px) {
+  .header-inner { flex-direction: column; gap: 0.5rem; }
+  .main-logo { height: 48px; }
+  .site-title h1 { font-size: 1.7rem; }
+  .tagline { font-size: 0.95rem; }
+}

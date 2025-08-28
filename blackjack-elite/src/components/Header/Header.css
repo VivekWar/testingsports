@@ -1,0 +1,61 @@
+.header {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 2rem 0;
+  position: relative;
+  z-index: 100;
+}
+
+.header-content {
+  text-align: center;
+  position: relative;
+}
+
+.header-title {
+  font-family: var(--font-playfair);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--blackjack-light-blue), var(--blackjack-card-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 30px rgba(56, 189, 248, 0.5);
+  letter-spacing: 0.02em;
+}
+
+.header-subtitle {
+  font-family: var(--font-cinzel);
+  font-size: 1.25rem;
+  color: var(--blackjack-light-gray);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+
+.demo-toggle-btn {
+  background: linear-gradient(135deg, var(--blackjack-electric), var(--blackjack-teal));
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+  font-family: var(--font-inter);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-custom);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(59, 130, 246, 0.5);
+}
+
+.demo-toggle-btn.active {
+  background: linear-gradient(135deg, var(--blackjack-card-gold), var(--blackjack-gold-accent));
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4);
+}

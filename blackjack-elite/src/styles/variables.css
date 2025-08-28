@@ -1,0 +1,37 @@
+:root {
+  /* Colors */
+  --blackjack-navy: #0A1628;
+  --blackjack-royal: #1e3a8a;
+  --blackjack-electric: #3b82f6;
+  --blackjack-teal: #0891b2;
+  --blackjack-light-blue: #38bdf8;
+  --blackjack-dark-bg: #030712;
+  --blackjack-card-gold: #fbbf24;
+  --blackjack-gold-accent: #f59e0b;
+  --blackjack-white: #f8fafc;
+  --blackjack-gray: #64748b;
+  --blackjack-light-gray: #cbd5e1;
+  --blackjack-dark-gray: #334155;
+
+  /* Glass Effects */
+  --glass-bg: rgba(15, 23, 42, 0.4);
+  --glass-border: rgba(56, 189, 248, 0.2);
+  --glass-backdrop: blur(20px);
+  --card-glass: rgba(15, 23, 42, 0.6);
+
+  /* Shadows and Glows */
+  --blue-glow: 0 0 20px rgba(59, 130, 246, 0.3);
+  --blue-glow-strong: 0 0 40px rgba(59, 130, 246, 0.5);
+  --card-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  --card-hover-shadow: 0 30px 60px rgba(59, 130, 246, 0.2);
+  --gold-glow: 0 0 15px rgba(245, 158, 11, 0.4);
+
+  /* Typography */
+  --font-playfair: 'Playfair Display', serif;
+  --font-cinzel: 'Cinzel', serif;
+  --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Animations */
+  --ease-custom: cubic-bezier(0.23, 1, 0.320, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
